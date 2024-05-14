@@ -1,0 +1,124 @@
+.about-section {
+    background-color: #1B262F;
+    height: 472px;
+    background-image: url(../images/about-back.png);
+    background-repeat: no-repeat;
+}
+
+.about {
+    @include display()
+}
+
+.about-text {
+    max-width: 445px;
+    height: 272px;
+    padding-top: 100px;
+    color: white;
+}
+
+.about-text-title {
+    @include title();
+    color: white;
+}
+
+.about-word {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.6;
+    font-family: "Public Sans";
+}
+
+.about-link {
+    max-width: 129px;
+    height: 48px;
+    margin-top: 32px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 13px 0px;
+    background-color: #1B262F;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    transition: all 0.3s ease;
+    &:active {
+        color: #1B262F;
+        background-color: white;
+    }
+}
+
+.about-img-wrapper {
+    max-width: 100%;
+    margin-top: 185px;
+}
+
+
+.about-mobile-imgs {
+    display: none;
+}
+
+@media (max-width: 1042px) {
+    .about-section {
+        background-image: url(../../images/about-tablet-bg.png);
+        background-position: top;
+        background-size: 100%;
+        height: 615px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img-wrapper {
+        padding-top: 88px;
+        width: 536px;
+        height: 103px;
+        margin: 0 auto;
+    }
+    .about-text {
+        width: 457px;
+        height: 272px;
+        text-align: center;
+        padding-top: 124px;
+        margin: 0 auto;
+    }
+    .about-link {
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 620px) {
+    .about-section {
+        background-image: url(../../images/about-mobile-bg.png);
+        background-position: top;
+        background-size: 100%;
+        height: 670px;
+    }
+    .about-imgs {
+        display: none;
+    }
+    .about-img-wrapper {
+        width: 327px;
+        height: 300px;
+    }
+    .about-mobile-imgs {
+        display: block;
+        margin: 0 auto;
+    }
+    .about-text {
+        width: 327px;
+        height: 300px;
+        padding-top: 10px;
+    }
+    .about-text-title {
+        font-size: 32px;
+        text-align: center;
+    }
+    .about-word {
+        width: 327px;
+        text-align: center;
+    }
+}

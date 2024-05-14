@@ -1,0 +1,57 @@
+.personal {
+    @include display()
+}
+
+.personal-list {
+    max-width: 350px;
+    text-align: center;
+}
+
+.personal-title {
+    font-size: 18px;
+    font-family: "Public Sans";
+    color: #36536B;
+    margin-top: 32px;
+}
+
+.personal-text {
+    @include text()
+}
+
+.personal-img {
+    width: 106px;
+    height: 106px;
+}
+
+@media (max-width: 1078px) {
+    .personal-section {
+        margin-top: 100px;
+    }
+    .personal {
+        width: 689px;
+        margin: 0 auto;
+    }
+    .personal-list {
+        width: 223px;
+    }
+    .personal-img {
+        width: 88px;
+        height: 88px;
+    }
+}
+
+@media (max-width: 731px) {
+    .personal-section {
+        padding-top: 80px;
+    }
+    .personal {
+        flex-direction: column;
+        gap: 48px;
+        width: 328px;
+    }
+    .personal-list {
+        width: 328px;
+        height: 280px;
+        margin: 0 auto;
+    }
+}

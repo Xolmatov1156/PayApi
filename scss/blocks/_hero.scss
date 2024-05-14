@@ -1,0 +1,118 @@
+.hero-section {
+    padding: 75px 0;
+}
+
+.hero {
+    @include display()
+}
+
+.hero-content {
+    max-width: 546px;
+}
+
+.hero-title {
+    margin-bottom: 21px;
+    color: #36536B;
+    font-size: 72px;
+    font-family: "DM Serif Display";
+    line-height: 72px;
+    font-weight: 400px;
+}
+
+.hero-form {
+    max-width: 445px;
+    margin-bottom: 16px;
+}
+
+.hero-label {
+    width: 100%;
+    position: relative;
+}
+
+.hero-input {
+    width: 100%;
+    padding: 16px 0px 14px 27px;
+    border-radius: 24px;
+    color: #36536B;
+    font-family: "Public Sans";
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.hero-button {
+    @include button();
+    right: 0;
+    position: absolute;
+    &:active {
+        background-color: #da6d97;
+    }
+}
+
+.hero-text {
+    color: rgb(141, 155, 165);
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Public Sans";
+    a {
+        color: #6C8294;
+        
+    }
+}
+
+@media (max-width: 738px) {
+    .hero-section {
+        padding: 48px 0 100px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero-img {
+        width: 200px;
+        height: 350px;
+        margin-bottom: 48px;
+    }
+    .hero-title {
+        font-size: 49px;
+        font-weight: 400;
+        line-height: 56px;
+        margin-bottom: 22px;
+    }
+    .hero-form {
+        margin: 0px auto;
+        margin-bottom: 16px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 738px) {
+    .hero-section {
+        padding: 32px 0 80px;
+    }
+    .hero-img {
+        width: 127px;
+        height: 239px;
+        margin-bottom: 48px;
+    }
+    .hero-title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 56px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .hero-form {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero-button {
+        position: static;
+        width: 100%;
+        margin-top: 16px;
+    }
+}

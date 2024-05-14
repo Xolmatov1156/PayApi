@@ -1,0 +1,33 @@
+@mixin display() {
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin title() {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    color: #36536B;
+}
+
+@mixin text() {
+    font-size: 15px;
+    margin-top: 16px;
+    font-family: "Public Sans";
+    line-height: 25px;
+    color: #6C8294;
+}
+
+@mixin button() {
+    border: none;
+    display: inline-block;
+    padding: 16px 0;
+    color: white;
+    cursor: pointer;
+    width: 173px;
+    border-radius: 24px;
+    background-color: #BA4270;
+    font-family: "Public Sans";
+    transition: all 0.3s ease;
+}
